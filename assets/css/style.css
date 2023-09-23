@@ -1,0 +1,851 @@
+/************Global CSS************/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --blueBackground: rgb(0, 23, 54);
+  --prplBackground: rgba(15, 13, 53);
+  --mainWhite: #EBECEF;
+  --secondWhite: #E5E4E9;
+  --dark: #1B1B1B;
+  --lightBlue: #326abf;
+  --navLightTheme: #86baff;
+  --fontFamilyCmfortaa: 'Comfortaa', cursive;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  background: rgb(8, 1, 142);
+  background: linear-gradient(310deg, var(--blueBackground) 0%, var(--prplBackground) 100%);
+  background-attachment: fixed;
+  transition: 2s;
+  overflow-x: hidden;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ia-container {
+  padding: 0px 150px;
+}
+
+.active {
+  color: var(--lightBlue) !important;
+}
+
+.title {
+  font-family: var(--fontFamilyCmfortaa);
+}
+
+.ia-mt-250 {
+  margin-top: 250px;
+}
+
+.ia-mt-200 {
+  margin-top: 200px;
+
+}
+
+.ia-dnone {
+  display: none;
+}
+
+
+
+
+
+/***** Scrollbar *****/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--prplBackground);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondWhite);
+}
+
+
+/************End************/
+
+/*************Change Theme BTN*************/
+#bgColor {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/************* Hero *************/
+#hero {
+  margin: 250px 0px 350px 0px;
+  /* height: 70vh; */
+}
+
+#hero #hero h1 {
+  font-size: 3rem;
+}
+
+/************* Main *************/
+#wrapper {
+  position: relative;
+  width: 85%;
+  height: fit-content;
+  margin-bottom: 250px;
+  max-width: 1424px;
+  border-radius: 50px;
+  /* transition: 0.5s; */
+  background-color: var(--mainWhite);
+}
+
+
+#wrapper header {
+  height: 70px;
+  padding-top: 20px;
+  border-radius: 50px 50px 0px 0px;
+  /* transition: 0.5s; */
+  background-color: var(--secondWhite);
+}
+
+#wrapper header p {
+  color: var(--dark);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: var(--fontFamilyCmfortaa);
+  cursor: pointer;
+}
+
+#wrapper header p:hover {
+  color: var(--lightBlue);
+
+}
+
+#wrapper .fixedPostion {
+  position: fixed;
+  width: 85%;
+  max-width: 1424px;
+
+  top: 0;
+  z-index: 999;
+  /* transition: 0.5s; */
+  border-radius: 0px;
+}
+
+.ia-transformY {
+  transform: translateY(46.5%);
+}
+
+/************ About ************/
+
+#about {
+  position: relative;
+  top: 150px;
+}
+
+#aboutText {
+  padding-right: 120px;
+}
+
+#aboutText p {
+  font-size: 2rem;
+  margin: 50px 0px;
+}
+
+#cvBtn {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 1.25rem;
+  background-color: var(--blueBackground);
+  color: var(--mainWhite);
+  transition: 0.5s;
+
+}
+
+#cvBtn:hover {
+  background-color: transparent;
+  border: 1px solid var(--blueBackground);
+  color: var(--dark);
+
+  transition: 0.5s;
+}
+
+#about img {
+  width: 300px;
+}
+
+.ia-socialLinks {
+  font-size: 2.5rem;
+  transform: translateY(-80%);
+}
+
+
+/********Skills********/
+.ia-right {
+  right: 12.1%;
+}
+
+.ia-left {
+  left: 12.5%;
+
+}
+
+#skills {
+  margin-top: 250px;
+}
+
+.skills {
+  background-color: var(--blueBackground);
+  width: 30%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px 50px; */
+  text-align: center;
+  border-radius: 15px;
+}
+
+.skills p {
+  z-index: 1;
+}
+
+#line {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  width: 3px;
+  height: 1400px;
+  background-color: var(--blueBackground);
+  transform: translateY(42px);
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--prplBackground);
+  margin-left: -5px;
+}
+
+#cssDot {
+  transform: translateY(165px);
+}
+
+#jsDot {
+  transform: translateY(400px);
+}
+
+#dbDot {
+  transform: translateY(635px);
+}
+
+
+#cSharpDot {
+  transform: translateY(870px);
+
+}
+
+#phpDot {
+  transform: translateY(1105px);
+}
+
+
+
+#htmlBlock::after,
+#jsBlock::after,
+#cSharpBlock::after
+{
+  position: absolute;
+  right: -85.5px;
+  content: "";
+  width: 100px;
+  height: 158px;
+  background-color: var(--blueBackground);
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  border-radius: 25px;
+}
+
+
+#cssBlock::after,
+#dbBlock::after,
+#phpBlock::after 
+ {
+  position: absolute;
+  left: -85.5px;
+  content: "";
+  width: 100px;
+  height: 158px;
+  background-color: var(--blueBackground);
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  border-radius: 25px;
+
+}
+
+#htmlBlock {
+  top: 70px;
+}
+
+#cssBlock {
+  top: 250px;
+}
+
+#jsBlock {
+  top: 500px;
+}
+
+#dbBlock {
+  top: 750px;
+}
+
+#cSharpBlock {
+  top: 1000px;
+}
+
+#phpBlock {
+  top: 1250px;
+}
+
+#phpBlock img {
+  width: 64px;
+}
+
+/******************* Projects **************************/
+
+.project {
+  position: relative;
+  margin: 0px 20px;
+  transition: 300ms;
+}
+.project img {
+  width: 100%;
+}
+.cover {
+  display: none;
+  position: relative;
+  background-color: rgb(50, 106, 191, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  transition: 300ms;
+} 
+
+.cover a {
+  display: block;
+  position: absolute;
+  top: 70%;
+  width: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--blueBackground);
+  color: white;
+  text-transform: capitalize;
+  transition: 200ms;
+  font-size: 1rem;
+  padding: 10px 0px;
+  border-radius: 5px;
+ 
+} 
+
+.cover a:hover {
+  transform: translateX(-50%) scale(1.1);
+  transition: 200ms;
+}
+
+#containerProjects {
+  display: flex;
+  background-color: var(--blueBackground);
+  margin-top: 35px;
+  padding: 30px 0px;
+}
+
+.slick-arrow {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+}
+.slick-next svg{
+  margin-left: 15px;
+  color: var(--lightBlue);
+  margin-right: -45px;
+}
+.slick-prev svg{
+  margin-right: 15px;
+  color: var(--lightBlue);
+  margin-left: -45px;
+  
+
+}
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  text-indent: -9999px;
+  font-size: 0px;
+  overflow: hidden;
+  margin: 5px;
+  background-color: var(--blueBackground);
+  /* more CSS */
+}
+
+.slick-active button {
+  background-color: var(--lightBlue)!important;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 0px;
+}
+
+
+
+/**************CONTACT***********************/
+
+
+.ia-form {
+  border: 1px solid white;
+  background-color: var(--blueBackground);
+  color: white;
+  font-size: 1.2rem;
+  transition: 200ms;
+  caret-color: var(--lightBlue);
+}
+
+.ia-form:focus {
+  color: white;
+  background-color: var(--blueBackground);
+  box-shadow: 0px 0px 2px 2px var(--dark);
+  border: 1px solid transparent;
+  font-size: 1.2rem;
+  transition: 200ms;
+  caret-color: var(--lightBlue);
+}
+
+#message {
+  height: 100%;
+  color: white;
+}
+
+#messageBlock label {
+  color: white;
+}
+
+#name,
+#email,
+#subject {
+  padding-left: 55px;
+
+}
+
+#name {
+  background: url("../img/avatar.gif") no-repeat var(--blueBackground) 7px 7px;
+  background-size: 30px;
+}
+
+#email {
+  background: url("../img/email.gif") no-repeat var(--blueBackground) 7px 7px;
+  background-size: 30px;
+}
+
+#subject {
+  background: url("../img/quotation.gif") no-repeat var(--blueBackground) 7px 7px;
+  background-size: 30px;
+}
+
+
+
+/****Autofill***/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid white;
+  -webkit-box-shadow: 0 0 0px 1000px var(--blueBackground) inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+  padding-left: 15px !important;
+}
+
+#messageSendInfo {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/****************THEME SITE***************/
+.switch {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 17px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 1px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+}
+
+/* .theme:hover */
+.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* .theme:hover */
+.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked+.slider {
+  background-color: #183153;
+}
+
+.input:focus+.slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+  transform: translateX(15px);
+}
+/*Footer*/
+footer {
+  position: relative;
+  bottom: 0px;
+  margin: 0px auto;
+  width: 85%;
+  max-width: 1424px;
+  border-radius: 50px 50px 0px 0px;
+  background-color: var(--mainWhite);
+  font-size: 1.15rem;
+}
+footer a {
+  color: var(--blueBackground);
+  transition: .5s;
+}
+
+footer a:hover {
+  color: var(--lightBlue);
+  transition: .5s;
+}
+
+footer p:first-child {
+  margin-right: 3rem;
+}
+
+/*********************BTN SEND**********************/
+
+#btnSend {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+  margin-top: 25px;
+}
+
+#btn {
+  padding-bottom: 10%;
+}
+
+.cssbuttons-io-button {
+  background: var(--blueBackground);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--prplBackground);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--prplBackground);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--blueBackground);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/****Light Theme****/
+.backgroundLight {
+  background: rgb(255,255,255);
+  background: linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(171,207,255,1) 100%);
+  color: black;
+  transition: 2s;
+}
+.backgroundLight  #hero h1 {
+  font-weight: bold!important;
+  color: var(--lightBlue);
+}
+.backgroundLight  #hero h2 {
+  color: var(--lightBlue);
+}
+.backgroundLight #wrapper {
+  background-color: white;
+}
+.backgroundLight #wrapper header {
+  background-color: var(--navLightTheme);
+}
+
+.backgroundLight #wrapper header a {
+  color: white;
+}
+
+.backgroundLight .active {
+  color: var(--blueBackground);
+}
+
+.backgroundLight #wrapper header a:hover {
+  color: var(--prplBackground);
+
+}
+
+.backgroundLight #cvBtn {
+  text-transform: uppercase;
+  background-color: #8fbbe8;
+  color:  white;
+  transition: 0.5s;
+}
+
+.backgroundLight #cvBtn:hover {
+  background-color: transparent;
+  border: 1px solid var(--blueBackground);
+  color: var(--blueBackground);
+}
+
+.backgroundLight .skills {
+  background-color: var(--secondWhite);
+  color: #001736;
+}
+
+.backgroundLight #htmlBlock::after,
+.backgroundLight #vueBlock::after,
+.backgroundLight #jsBlock::after,
+.backgroundLight #phpBlock::after,
+.backgroundLight #cssBlock::after,
+.backgroundLight #dbBlock::after,
+.backgroundLight #cSharpBlock::after{
+  background-color: var(--secondWhite);
+
+}
+
+.backgroundLight #line , .backgroundLight .dot {
+  background-color: #2883ff;
+}
+
+.backgroundLight #name {
+  background: url("../img/avatar-dark.gif") no-repeat var(--secondWhite) 7px 7px;
+  background-size: 30px;
+}
+
+.backgroundLight #email {
+  background: url("../img/email-dark.gif") no-repeat var(--secondWhite) 7px 7px;
+  background-size: 30px;
+}
+
+.backgroundLight #subject {
+  background: url("../img/quotation-dark.gif") no-repeat var(--secondWhite) 7px 7px;
+  background-size: 30px;
+}
+.backgroundLight .ia-form {
+  color: black;
+}
+.backgroundLight .ia-form:focus{
+  color: black;
+  box-shadow: 0px 0px 2px 2px var(--secondWhite);
+}
+
+.backgroundLight #message {
+  background-color: var(--secondWhite);
+  color: black;
+}
+
+.backgroundLight #messageBlock label {
+  color: black;
+}
+
+.backgroundLight #containerProjects{
+  background-color: var(--secondWhite);
+}
+.backgroundLight .cover a {
+  background-color: #183153;
+}
+
+/****Autofill Light Theme***/
+
+.backgroundLight input:-webkit-autofill,
+.backgroundLight input:-webkit-autofill:hover,
+.backgroundLight input:-webkit-autofill:focus,
+.backgroundLight textarea:-webkit-autofill,
+.backgroundLight textarea:-webkit-autofill:hover,
+.backgroundLight textarea:-webkit-autofill:focus,
+.backgroundLight select:-webkit-autofill,
+.backgroundLight select:-webkit-autofill:hover,
+.backgroundLight select:-webkit-autofill:focus {
+  border: 1px solid white;
+  -webkit-box-shadow: 0 0 0px 1000px var(--secondWhite) inset;
+  -webkit-text-fill-color: black;
+}
+
+.backgroundLight .cssbuttons-io-button .icon svg {
+  color: var(--navLightTheme);
+}
+.backgroundLight .cssbuttons-io-button {
+  box-shadow: inset 0 0 1.6em -0.6em var(--secondWhite);
+  background: var(--navLightTheme);
+}
+
+.backgroundLight .cssbuttons-io-button .icon {
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #8fbbe8;
+}
+
+/***** Scrollbar LIGHT*****/
+
+.backgroundLight::-webkit-scrollbar-track {
+  background-color: var(--mainWhite);
+}
+
+.backgroundLight::-webkit-scrollbar-thumb {
+  background-color: var(--navLightTheme);
+}
+
+
+/****END Light Theme****/

@@ -1,0 +1,270 @@
+@media screen and (max-width: 1399px) {
+  .ia-container {
+    padding: 0px 50px;
+  }
+
+  #aboutText {
+    padding-right: 50px;
+  }
+
+  #aboutText p {
+    font-size: 1.5rem;
+  }
+
+  /* #about {
+    margin-top: 100px;
+  } */
+
+  .ia-right {
+    /* right: 185px; */
+    right: 2.5%;
+  }
+
+  .ia-left {
+    left: 2.5%;
+  }
+
+  #line {
+    transform: translateY(25px);
+  }
+
+  .skills {
+    height: 115px;
+  }
+
+  .skills {
+    width: 32%;
+  }
+
+  .skills img {
+    width: 45px;
+  }
+
+  .ia-left {
+    left: 7.5%;
+  }
+
+  .ia-right {
+    right: 7.5%;
+  }
+
+  #cssBlock::after,
+  #dbBlock::after,
+  #phpBlock::after  {
+    left: -71.5px;
+    width: 86px;
+    height: 120px;
+  }
+
+  #htmlBlock::after,
+#jsBlock::after,
+#cSharpBlock::after {
+    width: 86px;
+    height: 120px;
+    right: -71.5px;
+  }
+
+}
+
+@media screen and (max-width: 999px) {
+  .ia-transformY {
+    transform: translateY(37.5%);
+  }
+
+  #about img {
+    width: 200px;
+  }
+
+  #line {
+    transform: translateY(28px);
+  }
+
+
+  #cssBlock::after,
+  #dbBlock::after,
+  #phpBlock::after  {
+    left: -71.5px;
+    width: 86px;
+    height: 120px;
+  }
+
+ #htmlBlock::after,
+#jsBlock::after,
+#cSharpBlock::after {
+    width: 86px;
+    height: 120px;
+    right: -71.5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #wrapper header p {
+    font-size: 1.05rem;
+  }
+
+  #blockAbout {
+    flex-direction: column;
+  }
+
+  #about h3,
+  #aboutText p {
+    text-align: center;
+
+  }
+
+  #aboutText {
+    padding: 0px;
+  }
+
+  #about img {
+    width: 300px;
+  }
+
+  .ia-transformY {
+    transform: translateY(23.5%);
+  }
+
+  #line {
+    transform: translateY(33px);
+  }
+
+
+  #line {
+    opacity: 0;
+  }
+
+  #skills {
+    margin-top: 160px;
+  }
+
+  #htmlBlock::after,
+  #jsBlock::after,
+  #phpBlock::after,
+  #cssBlock::after,
+  #dbBlock::after,
+  #cSharpBlock::after {
+    display: none;
+  }
+
+  #htmlBlock,
+  #jsBlock,
+  #cSharpBlock{
+    width: 82%;
+  }
+
+
+  #cssBlock,
+  #dbBlock,
+  #phpBlock {
+    width: 82%;
+  }
+
+  #skillsCards {
+    display: flex;
+    justify-content: center;
+  }
+
+  #jsBlock {
+    top: 430px;
+  }
+
+  #dbBlock {
+    top: 610px;
+  }
+
+  #cSharpBlock {
+    top: 790px;
+  }
+
+  #phpBlock {
+    top: 970px;
+  }
+
+
+  /*Projects*/
+  #projects {
+    margin-top: -250px;
+  }
+  .project {
+    display: flex!important;
+    justify-content: center!important;
+    position: relative;
+    width: 550px;
+  }
+ /*
+  .project img {
+    width: 430px;
+  }
+  .cover {
+    width: 430px;
+  }
+  */
+ 
+  #socialIcons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  #cvBtn {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer p:first-child {
+    margin-right: 0px!important;
+  }
+
+}
+
+
+@media screen and (max-width: 466px) {
+  #wrapper header {
+    display: none;
+  }
+
+  #containerAbout {
+    padding: 20px 10px 0px;
+  }
+  #about {
+    top: 60px;
+  }
+  #about img {
+    width: 200px;
+  }
+
+  #cvBtn {
+    width: 80%;
+    margin-left: 25px;
+  }
+
+
+  #skills {
+    margin-top: 250px;
+  }
+
+
+  .ia-transformY {
+    transform: translateY(0%);
+  }
+
+  #projects {
+    margin-top: -300px;
+  }
+
+}
+
+@media screen and (max-width: 326px) {
+  .skills p {
+    font-size: 1.1rem !important;
+  }
+
+  footer svg{
+    display: none;
+  }
+}
