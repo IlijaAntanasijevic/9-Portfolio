@@ -11,7 +11,7 @@ Slick slider
 
 Bootstrap 5
 
-AOS biblioteka
+AOS library
 
 PHP Mailer
 
