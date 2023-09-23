@@ -9,7 +9,6 @@ window.addEventListener('DOMContentLoaded',function(e){
         position: "relative",
         height: "70px"
       })
-      // $('.ia-container').addClass('ia-transformY');
     }
     else {
       $('header').removeClass("fixedPostion");
@@ -17,7 +16,6 @@ window.addEventListener('DOMContentLoaded',function(e){
       $('#tmpAbout').css({
         height: "0px"
       })
-      // $('.ia-container').removeClass('ia-transformY');
     }
 
     /****Navbar|change color - active *****/
@@ -40,7 +38,7 @@ window.addEventListener('DOMContentLoaded',function(e){
     
 
   })
-  /*******Navigation - click***********/
+  /*******Navigation - on click***********/
   $('#aboutNav').click(function(){
     scrollToElement('containerAbout');
   })
@@ -53,7 +51,7 @@ window.addEventListener('DOMContentLoaded',function(e){
   $('#contactNav').click(function(){
     scrollToElement('containerContact');
   })
-  /*********Project Cover ******/
+  /********* Project Cover *********/
   $('.project')
     .mouseenter(function(e){
       $(this).find('.cover').show();
@@ -90,7 +88,7 @@ window.addEventListener('DOMContentLoaded',function(e){
     changeTheme(themeCheck);
   }
 
-  /*****SLIDER*************/
+  /**********SLIDER*************/
   $('.projectsSlider').slick({
     centerMode: false,
     centerPadding: '60px',
@@ -105,30 +103,8 @@ window.addEventListener('DOMContentLoaded',function(e){
     nextArrow: `<button button type='button' class= 'slick-next pull-right'>
         <span class="iconify" data-icon="material-symbols:arrow-back-ios-new" data-rotate="180deg"></span>
       </button> `,
-    /*
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '20px',
-          slidesToShow: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-
-     */
   });
+  
   /* Animation Projects */
   AOS.init({
     offset: 20
