@@ -5,7 +5,7 @@ About me, something like CV :D
 ------------------------------------
 
 
-My designe
+My design
 
 Slick slider
 
