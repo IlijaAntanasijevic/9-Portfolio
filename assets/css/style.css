@@ -16,6 +16,10 @@
   --fontFamilyCmfortaa: 'Comfortaa', cursive;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -335,6 +339,16 @@ a {
 .project img {
   width: 100%;
 }
+
+.projectButtons {
+  position: relative;
+  top: 40%;
+}
+
+.cover .projectButtons svg {
+  font-size: 1.2rem;
+  transform: translate(10px, -1px);
+}
 .cover {
   display: none;
   position: relative;
@@ -348,13 +362,22 @@ a {
   transition: 300ms;
 } 
 
+.cover p:first-child {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+
 .cover a {
   display: block;
-  position: absolute;
-  top: 70%;
+  /*
+   position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+
+  */
   width: 20%;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: var(--blueBackground);
   color: white;
   text-transform: capitalize;
@@ -366,9 +389,10 @@ a {
 } 
 
 .cover a:hover {
-  transform: translateX(-50%) scale(1.1);
+  transform: scale(1.1);
   transition: 200ms;
 }
+
 
 #containerProjects {
   display: flex;
@@ -771,6 +795,11 @@ footer p:first-child {
   background-color: #2883ff;
 }
 
+.backgroundLight .cover {
+  background-color: rgba(96, 134, 192, 0.6);
+}
+
+
 .backgroundLight #name {
   background: url("../img/avatar-dark.gif") no-repeat var(--secondWhite) 7px 7px;
   background-size: 30px;
@@ -806,7 +835,11 @@ footer p:first-child {
   background-color: var(--secondWhite);
 }
 .backgroundLight .cover a {
-  background-color: #183153;
+  background-color: var(--lightBlue);
+}
+
+.backgroundLight .slick-dots li button {
+  background-color: var(--navLightTheme);
 }
 
 /****Autofill Light Theme***/
@@ -835,6 +868,10 @@ footer p:first-child {
 
 .backgroundLight .cssbuttons-io-button .icon {
   box-shadow: 0.1em 0.1em 0.6em 0.2em #8fbbe8;
+}
+
+.backgroundLight footer {
+  background-color: white;
 }
 
 /***** Scrollbar LIGHT*****/

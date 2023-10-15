@@ -64,6 +64,10 @@
     right: -71.5px;
   }
 
+  .projectButtons {
+    top: 25%;
+  }
+
 }
 
 @media screen and (max-width: 999px) {
@@ -88,12 +92,18 @@
     height: 120px;
   }
 
- #htmlBlock::after,
-#jsBlock::after,
-#cSharpBlock::after {
+  #htmlBlock::after,
+  #jsBlock::after,
+  #cSharpBlock::after {
     width: 86px;
     height: 120px;
     right: -71.5px;
+  }
+  .projectButtons {
+    top: 5%;
+  }
+  .cover a {
+    width: 30%;
   }
 }
 
@@ -192,15 +202,17 @@
     position: relative;
     width: 550px;
   }
- /*
-  .project img {
-    width: 430px;
+  .cover p:first-child {
+    font-size: 2.5rem;
+    margin-top: 15px!important;
   }
-  .cover {
-    width: 430px;
+
+  #containerProjects {
+    padding: 10px ;
   }
-  */
- 
+  #containerSkills {
+    margin-top: 300px!important;
+  }
   #socialIcons {
     display: flex;
     justify-content: center;
@@ -209,7 +221,8 @@
   #cvBtn {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 50px auto;
+    width: 80%;
   }
 
   footer {
@@ -222,7 +235,17 @@
 
 }
 
-
+@media screen and (max-width: 631px) {
+  .cover p:first-child {
+    font-size: 2rem;
+  }
+  .cover a {
+    width: 35%;
+  }
+  .projectButtons {
+    top: 0%;
+  }
+}
 @media screen and (max-width: 466px) {
   #wrapper header {
     display: none;
@@ -240,12 +263,11 @@
 
   #cvBtn {
     width: 80%;
-    margin-left: 25px;
   }
 
 
   #skills {
-    margin-top: 250px;
+    margin-top: 170px;
   }
 
 
@@ -257,11 +279,62 @@
     margin-top: -300px;
   }
 
+  #containerSkills {
+    margin-top: 0px!important;
+  }
+
+  #containerContact {
+    margin-top: 150px;
+  }
+  .slick-arrow {
+    display: none!important;
+  }
+  .project {
+    margin: 0px!important;
+  }
+  .cover a {
+    width: 20%;
+}
+  #project img {
+    width: 40em;
+    object-fit: cover;
+  }
+  .ia-container#projects {
+    padding: 0px 30px;
+  }
+
+  .projectButtons  {
+    top: 10%;
+  }
+  .projectButtons svg {
+    display: none;
+  }
+  .project a:first-child {
+    margin-right: 1rem!important;
+  }
+  .cover p:first-child {
+    font-size: 2rem;
+  }
+  #slick-slide02 a{
+    margin: 0px!important;
+  }
 }
 
 @media screen and (max-width: 326px) {
   .skills p {
     font-size: 1.1rem !important;
+  }
+
+  .cover {
+    display: block;
+    
+  }
+  .projectButtons {
+    top: 15%
+  }
+  .cover a {
+    font-size: 0.8rem;
+    width: 15%;
   }
 
   footer svg{

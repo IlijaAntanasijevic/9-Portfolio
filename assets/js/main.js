@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded',function(e){
   $(document).on('scroll',() => {
     let scroll = window.scrollY;
+
     /**** Navbar fixed ******/
     if(scroll > 700){
       $('header').addClass("fixedPostion");
@@ -37,6 +38,7 @@ window.addEventListener('DOMContentLoaded',function(e){
       $('#navigation').find('.active').removeClass('active');
       $('#navigation li:nth-child(1) p').addClass('active')
     }
+
     
 
   })
@@ -100,35 +102,32 @@ window.addEventListener('DOMContentLoaded',function(e){
     autoplay: false,
     autoplaySpeed: 5000,
     arrows: true,
+    swipeToSlide: true,
     prevArrow: `<button type='button' class='slick-prev pull-left'>
       <span class="iconify" data-icon="material-symbols:arrow-back-ios-new"></span></button>`,
     nextArrow: `<button button type='button' class= 'slick-next pull-right'>
         <span class="iconify" data-icon="material-symbols:arrow-back-ios-new" data-rotate="180deg"></span>
       </button> `,
-    /*
     responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '20px',
-          slidesToShow: 1
-        }
-      },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          variableWidth: true
         }
       }
     ]
-
-     */
   });
+
+  $('.project').hover(function(){
+    $(this).css({
+      'cursor': '-webkit-grab',
+      'cursos': 'grab'
+    })
+  })
   /* Animation Projects */
   AOS.init({
     offset: 20
