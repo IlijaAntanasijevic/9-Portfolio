@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded',function(e){
         position: "relative",
         height: "70px"
       })
-      // $('.ia-container').addClass('ia-transformY');
     }
     else {
       $('header').removeClass("fixedPostion");
@@ -18,7 +17,6 @@ window.addEventListener('DOMContentLoaded',function(e){
       $('#tmpAbout').css({
         height: "0px"
       })
-      // $('.ia-container').removeClass('ia-transformY');
     }
 
     /****Navbar|change color - active *****/
@@ -42,7 +40,7 @@ window.addEventListener('DOMContentLoaded',function(e){
     
 
   })
-  /*******Navigation - click***********/
+  /*******Navigation - on click***********/
   $('#aboutNav').click(function(){
     scrollToElement('containerAbout');
   })
@@ -55,7 +53,7 @@ window.addEventListener('DOMContentLoaded',function(e){
   $('#contactNav').click(function(){
     scrollToElement('containerContact');
   })
-  /*********Project Cover ******/
+  /********* Project Cover *********/
   $('.project')
     .mouseenter(function(e){
       $(this).find('.cover').show();
@@ -92,7 +90,7 @@ window.addEventListener('DOMContentLoaded',function(e){
     changeTheme(themeCheck);
   }
 
-  /*****SLIDER*************/
+  /**********SLIDER*************/
   $('.projectsSlider').slick({
     centerMode: false,
     centerPadding: '60px',
@@ -128,12 +126,14 @@ window.addEventListener('DOMContentLoaded',function(e){
       'cursos': 'grab'
     })
   })
-  /* Animation Projects */
-  AOS.init({
+   /* Animation Projects */
+   AOS.init({
     offset: 20
   });
+  });
   
-})
+ 
+  
 
 
 function changeTheme(checked){
