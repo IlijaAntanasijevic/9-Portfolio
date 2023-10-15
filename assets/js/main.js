@@ -126,9 +126,9 @@ window.addEventListener('DOMContentLoaded',function(e){
       'cursos': 'grab'
     })
   })
-   /* Animation Projects */
+   /* Animation Skills */
    AOS.init({
-    offset: 20
+    offset: 250
   });
   });
   
