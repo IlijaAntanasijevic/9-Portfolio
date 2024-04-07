@@ -49,16 +49,18 @@
   }
 
   #cssBlock::after,
-  #dbBlock::after,
-  #phpBlock::after  {
+  #cSharpBlock::after,
+  #vueBlock::after,
+  #laravelBlock::after {
     left: -71.5px;
     width: 86px;
     height: 120px;
   }
 
   #htmlBlock::after,
-#jsBlock::after,
-#cSharpBlock::after {
+  #jsBlock::after,
+  #dbBlock::after,
+  #phpBlock::after {
     width: 86px;
     height: 120px;
     right: -71.5px;
@@ -85,8 +87,9 @@
 
 
   #cssBlock::after,
-  #dbBlock::after,
-  #phpBlock::after  {
+  #cSharpBlock::after,
+  #vueBlock::after,
+  #laravelBlock::after {
     left: -71.5px;
     width: 86px;
     height: 120px;
@@ -94,14 +97,17 @@
 
   #htmlBlock::after,
   #jsBlock::after,
-  #cSharpBlock::after {
+  #dbBlock::after,
+  #phpBlock::after {
     width: 86px;
     height: 120px;
     right: -71.5px;
   }
+
   .projectButtons {
     top: 5%;
   }
+
   .cover a {
     width: 30%;
   }
@@ -153,20 +159,31 @@
   #phpBlock::after,
   #cssBlock::after,
   #dbBlock::after,
-  #cSharpBlock::after {
+  #vueBlock::after,
+  #cSharpBlock::after,
+  #laravelBlock::after {
     display: none;
   }
 
-  #htmlBlock,
-  #jsBlock,
-  #cSharpBlock{
+  /*
+  #htmlBlock::after,
+  #jsBlock::after,
+  #dbBlock::after,
+  #vueBlock::after,
+  #phpBlock::after {
     width: 82%;
   }
 
-
-  #cssBlock,
+   #cssBlock,
   #dbBlock,
-  #phpBlock {
+  #phpBlock,
+  #vueBlock {
+    width: 82%;
+  }
+*/
+
+
+  .skills {
     width: 82%;
   }
 
@@ -179,16 +196,24 @@
     top: 430px;
   }
 
-  #dbBlock {
+  #vueBlock {
     top: 610px;
   }
 
-  #cSharpBlock {
+  #dbBlock {
     top: 790px;
   }
 
-  #phpBlock {
+  #cSharpBlock {
     top: 970px;
+  }
+
+  #phpBlock {
+    top: 1150px;
+  }
+
+  #laravelBlock {
+    top: 1330px;
   }
 
 
@@ -196,28 +221,33 @@
   #projects {
     margin-top: -250px;
   }
+
   .project {
-    display: flex!important;
-    justify-content: center!important;
+    display: flex !important;
+    justify-content: center !important;
     position: relative;
     width: 550px;
   }
+
   .cover p:first-child {
     font-size: 2.5rem;
-    margin-top: 15px!important;
+    margin-top: 15px !important;
   }
 
   #containerProjects {
-    padding: 10px ;
+    padding: 10px;
   }
+
   #containerSkills {
-    margin-top: 300px!important;
+    margin-top: 300px !important;
   }
+
   #socialIcons {
     display: flex;
     justify-content: center;
     margin: 20px 0px;
   }
+
   #cvBtn {
     display: flex;
     justify-content: center;
@@ -229,8 +259,9 @@
     flex-direction: column;
     align-items: center;
   }
+
   footer p:first-child {
-    margin-right: 0px!important;
+    margin-right: 0px !important;
   }
 
 }
@@ -239,13 +270,16 @@
   .cover p:first-child {
     font-size: 2rem;
   }
+
   .cover a {
     width: 35%;
   }
+
   .projectButtons {
     top: 0%;
   }
 }
+
 @media screen and (max-width: 466px) {
   #wrapper header {
     display: none;
@@ -254,9 +288,11 @@
   #containerAbout {
     padding: 20px 10px 0px;
   }
+
   #about {
     top: 60px;
   }
+
   #about img {
     width: 200px;
   }
@@ -280,43 +316,52 @@
   }
 
   #containerSkills {
-    margin-top: 0px!important;
+    margin-top: 0px !important;
   }
 
   #containerContact {
     margin-top: 150px;
   }
+
   .slick-arrow {
-    display: none!important;
+    display: none !important;
   }
+
   .project {
-    margin: 0px!important;
+    margin: 0px !important;
   }
+
   .cover a {
     width: 20%;
-}
+  }
+
   #project img {
     width: 40em;
     object-fit: cover;
   }
+
   .ia-container#projects {
     padding: 0px 30px;
   }
 
-  .projectButtons  {
+  .projectButtons {
     top: 10%;
   }
+
   .projectButtons svg {
     display: none;
   }
+
   .project a:first-child {
-    margin-right: 1rem!important;
+    margin-right: 1rem !important;
   }
+
   .cover p:first-child {
     font-size: 2rem;
   }
-  #slick-slide02 a{
-    margin: 0px!important;
+
+  #slick-slide02 a {
+    margin: 0px !important;
   }
 }
 
@@ -327,17 +372,19 @@
 
   .cover {
     display: block;
-    
+
   }
+
   .projectButtons {
     top: 15%
   }
+
   .cover a {
     font-size: 0.8rem;
     width: 15%;
   }
 
-  footer svg{
+  footer svg {
     display: none;
   }
 }

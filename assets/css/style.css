@@ -170,7 +170,7 @@ a {
 }
 
 #cvBtn {
-  padding: 10px 30px;
+  padding: 10px 80px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 1.25rem;
@@ -234,7 +234,7 @@ a {
   position: relative;
   left: 50%;
   width: 3px;
-  height: 1400px;
+  height: 1900px;
   background-color: var(--blueBackground);
   transform: translateY(42px);
 }
@@ -247,6 +247,7 @@ a {
   margin-left: -5px;
 }
 
+/*
 #cssDot {
   transform: translateY(165px);
 }
@@ -254,6 +255,7 @@ a {
 #jsDot {
   transform: translateY(400px);
 }
+
 
 #dbDot {
   transform: translateY(635px);
@@ -269,12 +271,49 @@ a {
   transform: translateY(1105px);
 }
 
+#laravelDot {
+  transform: translateY(1340px);
+}
+*/
+
+#cssDot {
+  transform: translateY(165px);
+}
+
+#jsDot {
+  transform: translateY(400px);
+}
+
+#vueDot {
+  transform: translateY(635px);
+}
+
+#dbDot {
+  transform: translateY(870px);
+}
+
+
+#cSharpDot {
+  transform: translateY(1105px);
+
+}
+
+#phpDot {
+  transform: translateY(1340px);
+}
+
+#laravelDot {
+  transform: translateY(1575px);
+}
+
+
+
 
 
 #htmlBlock::after,
 #jsBlock::after,
-#cSharpBlock::after
-{
+#dbBlock::after,
+#phpBlock::after {
   position: absolute;
   right: -85.5px;
   content: "";
@@ -287,9 +326,9 @@ a {
 
 
 #cssBlock::after,
-#dbBlock::after,
-#phpBlock::after 
- {
+#cSharpBlock::after,
+#vueBlock::after,
+#laravelBlock::after {
   position: absolute;
   left: -85.5px;
   content: "";
@@ -313,20 +352,32 @@ a {
   top: 500px;
 }
 
-#dbBlock {
+#vueBlock {
   top: 750px;
 }
 
-#cSharpBlock {
+#dbBlock {
   top: 1000px;
 }
 
-#phpBlock {
+#cSharpBlock {
   top: 1250px;
+}
+
+#phpBlock {
+  top: 1500px;
 }
 
 #phpBlock img {
   width: 64px;
+}
+
+#laravelBlock {
+  top: 1750px;
+}
+
+#laravelBlock img {
+  width: 55px;
 }
 
 /******************* Projects **************************/
@@ -336,6 +387,7 @@ a {
   margin: 0px 20px;
   transition: 300ms;
 }
+
 .project img {
   width: 100%;
 }
@@ -349,6 +401,7 @@ a {
   font-size: 1.2rem;
   transform: translate(10px, -1px);
 }
+
 .cover {
   display: none;
   position: relative;
@@ -360,7 +413,7 @@ a {
   text-align: center;
   font-size: 2rem;
   transition: 300ms;
-} 
+}
 
 .cover p:first-child {
   font-weight: 500;
@@ -385,8 +438,8 @@ a {
   font-size: 1rem;
   padding: 10px 0px;
   border-radius: 5px;
- 
-} 
+
+}
 
 .cover a:hover {
   transform: scale(1.1);
@@ -406,18 +459,21 @@ a {
   background-color: transparent;
   border: none;
 }
-.slick-next svg{
+
+.slick-next svg {
   margin-left: 15px;
   color: var(--lightBlue);
   margin-right: -45px;
 }
-.slick-prev svg{
+
+.slick-prev svg {
   margin-right: 15px;
   color: var(--lightBlue);
   margin-left: -45px;
-  
+
 
 }
+
 .slick-dots li button {
   width: 10px;
   height: 10px;
@@ -432,7 +488,7 @@ a {
 }
 
 .slick-active button {
-  background-color: var(--lightBlue)!important;
+  background-color: var(--lightBlue) !important;
 }
 
 .slick-dots {
@@ -638,6 +694,7 @@ select:-webkit-autofill:focus {
 .input:checked+.slider:before {
   transform: translateX(15px);
 }
+
 /*Footer*/
 footer {
   position: relative;
@@ -649,6 +706,7 @@ footer {
   background-color: var(--mainWhite);
   font-size: 1.15rem;
 }
+
 footer a {
   color: var(--blueBackground);
   transition: .5s;
@@ -695,6 +753,7 @@ footer p:first-child {
   height: 2.8em;
   padding-right: 3.3em;
 }
+
 .cssbuttons-io-button .icon {
   background: white;
   margin-left: 1em;
@@ -730,21 +789,24 @@ footer p:first-child {
 
 /****Light Theme****/
 .backgroundLight {
-  background: rgb(255,255,255);
-  background: linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(171,207,255,1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(310deg, rgba(255, 255, 255, 1) 0%, rgba(171, 207, 255, 1) 100%);
   color: black;
   transition: 2s;
 }
-.backgroundLight  #hero h1 {
-  font-weight: bold!important;
+
+.backgroundLight #hero h1 {
   color: var(--lightBlue);
 }
-.backgroundLight  #hero h2 {
+
+.backgroundLight #hero h2 {
   color: var(--lightBlue);
 }
+
 .backgroundLight #wrapper {
   background-color: white;
 }
+
 .backgroundLight #wrapper header {
   background-color: var(--navLightTheme);
 }
@@ -765,7 +827,7 @@ footer p:first-child {
 .backgroundLight #cvBtn {
   text-transform: uppercase;
   background-color: #8fbbe8;
-  color:  white;
+  color: white;
   transition: 0.5s;
 }
 
@@ -786,12 +848,13 @@ footer p:first-child {
 .backgroundLight #phpBlock::after,
 .backgroundLight #cssBlock::after,
 .backgroundLight #dbBlock::after,
-.backgroundLight #cSharpBlock::after{
+.backgroundLight #cSharpBlock::after,
+.backgroundLight #laravelBlock::after {
   background-color: var(--secondWhite);
-
 }
 
-.backgroundLight #line , .backgroundLight .dot {
+.backgroundLight #line,
+.backgroundLight .dot {
   background-color: #2883ff;
 }
 
@@ -814,10 +877,12 @@ footer p:first-child {
   background: url("../img/quotation-dark.gif") no-repeat var(--secondWhite) 7px 7px;
   background-size: 30px;
 }
+
 .backgroundLight .ia-form {
   color: black;
 }
-.backgroundLight .ia-form:focus{
+
+.backgroundLight .ia-form:focus {
   color: black;
   box-shadow: 0px 0px 2px 2px var(--secondWhite);
 }
@@ -831,9 +896,10 @@ footer p:first-child {
   color: black;
 }
 
-.backgroundLight #containerProjects{
+.backgroundLight #containerProjects {
   background-color: var(--secondWhite);
 }
+
 .backgroundLight .cover a {
   background-color: var(--lightBlue);
 }
@@ -861,6 +927,7 @@ footer p:first-child {
 .backgroundLight .cssbuttons-io-button .icon svg {
   color: var(--navLightTheme);
 }
+
 .backgroundLight .cssbuttons-io-button {
   box-shadow: inset 0 0 1.6em -0.6em var(--secondWhite);
   background: var(--navLightTheme);
